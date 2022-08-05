@@ -71,6 +71,7 @@
 //   console.log(isValid('{}{'));
 
 //more advanced method with timespace complexity = O(n).
+//Key to solving this problem is to use a Stack and a Map.
 const isValid = (s) => {
     if (s.length % 2 !== 0){
         return false;
@@ -84,7 +85,6 @@ const isValid = (s) => {
 
     for(let i = 0; i < s.length; i++){
         if (map.has(s[i])){
-            console.log(map.get(s[i]));
             stack.push(map.get(s[i]));
         }else if(s[i] !== stack.pop()){
             return false;

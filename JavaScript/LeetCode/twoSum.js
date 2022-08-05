@@ -21,6 +21,7 @@ You can return the answer in any order.
 // console.log(test1); //outputs [1,4], correct because index[1] = 2, and index[4] = 5, added is the target 7.
 
 //optimized solution, time complexity o(n)
+//key to solving this problem is to use a Hashtable.
 var twoSum = function(nums, target) {
     const hashtable = {};  //creating a hashtable to store our keys and their values
 
