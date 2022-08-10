@@ -86,6 +86,7 @@ var mergeTwoLists = function (list1, list2) {
 //Time complexity of this solution is O(n) since we only ever visit every value in the two lists once
 //Space complexity is O(1) as we are always constantly using the same dummy node and the same previous
 //node. We are never creating any new memory allocations with our code.
+//When working with linked lists, always remember to use dummy nodes!!
   
 
 
